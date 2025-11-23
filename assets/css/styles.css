@@ -757,3 +757,135 @@ a {
   background-color: #7264d6;
   border-radius: 50%;
 }
+
+/* ============ Client ============== */
+#client {
+  margin-top: 160px;
+}
+
+.client-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.client-title {
+  --width: 100%;
+  margin-top: 12px;
+}
+
+.client-desc {
+  margin-top: 18px;
+  max-width: 435px;
+  color: #696d76;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.client-comment__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.client-comment__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.client-comment__item:hover .client-comment-item__content-wrapper {
+  filter: drop-shadow(0 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.client-comment-item__content-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 570px;
+  height: 254px;
+  background-color: #fff;
+  padding: 42px 28px;
+  filter: drop-shadow(0 0 1px #dfe2e8);
+  transition: filter ease 0.3s;
+}
+
+.client-comment-item__content-wrapper::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 95px;
+  height: 60px;
+  background: url("../icons/comment.svg") center center/contain no-repeat;
+  bottom: -59px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.client-comment-item__content {
+  color: #696d76;
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.client-comment-item__avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 95px;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+
+.client-comment-item__avatar-wrapper img {
+  max-width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.client-comment-item__name {
+  margin-top: 20px;
+  color: #070052;
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 1.38;
+}
+
+.client-comment-item__job {
+  margin-top: 2px;
+  color: #696d76;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+.client-comment__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 12px;
+}
+
+.client-comment__nav-item {
+  width: 22px;
+  height: 6px;
+  border-radius: 1px;
+  border: 1px solid #9b9fab;
+  cursor: pointer;
+}
+
+.client-comment__nav-item.active {
+  background-color: #7264d6;
+  border-color: #7264d6;
+}
