@@ -635,3 +635,125 @@ a {
   font-weight: 600;
   line-height: 1.4;
 }
+
+/* ============== Transfer ================ */
+#transfer {
+  margin-top: 160px;
+}
+
+.transfer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transfer-media {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 40%;
+  background: url("../images/transfer-bg.svg") center bottom/contain no-repeat;
+}
+
+.transfer-media__img {
+  width: 88%;
+  object-fit: cover;
+}
+
+.transfer-media__payment-method,
+.transfer-media__money {
+  position: absolute;
+}
+
+.transfer-media__payment-method {
+  left: 263px;
+  bottom: 57px;
+  width: 281px;
+  height: 220px;
+  background-color: #fff;
+  box-shadow: 0 44px 48px rgba(0, 0, 0, 0.1);
+  padding: 28px;
+  border-radius: 8px;
+}
+
+.transfer-media-method__text {
+  color: #212832;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.transfer-media-method__list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 18px;
+}
+
+.transfer-media-method__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 63px;
+  height: 48px;
+  border-radius: 4px;
+  background: #f2f2fa;
+}
+
+.transfer-media-method__item.plus {
+  background: #f9ea63;
+}
+
+.transfer-media__money {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -100px;
+  bottom: 222px;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
+  background: #7264d6;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+.transfer-content {
+  width: 40%;
+}
+
+.transfer-title {
+  --width: 100%;
+}
+
+.transfer-desc {
+  margin-top: 20px;
+  --width: 100%;
+}
+
+.transfer-content__list {
+  margin: 28px 0 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.transfer-content__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #212832;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.transfer-content__item::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #7264d6;
+  border-radius: 50%;
+}
