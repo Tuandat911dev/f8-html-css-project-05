@@ -35,6 +35,7 @@
       href="./assets/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
@@ -46,10 +47,12 @@
           </a>
 
           <nav class="header-nav">
-            <a href="#!" class="header-nav-item active" data="Home">Home</a>
-            <a href="#!" class="header-nav-item" data="Products">Products</a>
-            <a href="#!" class="header-nav-item" data="Features">Features</a>
-            <a href="#!" class="header-nav-item" data="Blog">Blog</a>
+            <a href="#hero" class="header-nav-item active" data="Home">Home</a>
+            <a href="#work" class="header-nav-item" data="Products">Products</a>
+            <a href="#payment" class="header-nav-item" data="Features"
+              >Features</a
+            >
+            <a href="#blog" class="header-nav-item" data="Blog">Blog</a>
           </nav>
 
           <div class="header-cta">
@@ -62,10 +65,10 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <section id="hero">
         <div class="container">
           <div class="hero-inner">
-            <section class="hero-info">
+            <section class="hero-info" data-aos="fade-up">
               <p class="section-sub-title">Digital Smart Wallet</p>
 
               <h1 class="hero-title">
@@ -93,7 +96,7 @@
                 *We’ll respect the inbox and never share your email.
               </p>
             </section>
-            <figure class="hero-media">
+            <figure class="hero-media" data-aos="fade-left">
               <img
                 class="hero-media__img"
                 src="./assets/images/mobile.png"
@@ -128,7 +131,7 @@
       <section id="work">
         <div class="container">
           <div class="work-inner">
-            <figure class="work-media">
+            <figure class="work-media" data-aos="fade-up-right">
               <div class="work-media__img-wrapper">
                 <div class="work-media__img">
                   <img src="./assets/images/men.png" alt="How it work" />
@@ -146,7 +149,7 @@
                 />
               </div>
             </figure>
-            <section class="work-content">
+            <section class="work-content" data-aos="fade-left">
               <p class="section-sub-title">Digital Smart Wallet</p>
               <h2 class="section-title work-title">How It Works</h2>
 
@@ -189,7 +192,7 @@
       <section id="payment">
         <div class="container">
           <div class="payment-inner">
-            <section class="payment-content">
+            <section class="payment-content" data-aos="fade-right">
               <p class="section-sub-title">Digital Smart Wallet</p>
               <h2 class="section-title payment-title">
                 One Card For All Your Payments
@@ -209,7 +212,7 @@
               <a href="#!" class="btn payment-content__btn">Get Started</a>
             </section>
 
-            <figure class="payment-media">
+            <figure class="payment-media" data-aos="zoom-in-up">
               <div class="payment-media__wrapper">
                 <img
                   class="payment-media__img"
@@ -252,7 +255,7 @@
       <section id="transfer">
         <div class="container">
           <div class="transfer-inner">
-            <figure class="transfer-media">
+            <figure class="transfer-media" data-aos="flip-right">
               <img
                 class="transfer-media__img"
                 src="./assets/images/woman.svg"
@@ -289,7 +292,7 @@
                 <img src="./assets/icons/money.svg" alt="" />
               </div>
             </figure>
-            <section class="transfer-content">
+            <section class="transfer-content" data-aos="fade-up-left">
               <p class="section-sub-title">Digital Smart Wallet</p>
               <h2 class="section-title transfer-title">
                 Transfer and Deposite Your Money Anytime
@@ -314,7 +317,7 @@
       <!-- Client -->
       <section id="client">
         <div class="container">
-          <div class="client-content">
+          <div class="client-content" data-aos="flip-left">
             <p class="section-sub-title">Our Testimonial</p>
             <h2 class="section-title client-title">What Clients Says</h2>
             <p class="client-desc">
@@ -324,7 +327,7 @@
           </div>
 
           <div class="client-comment__list">
-            <div class="client-comment__item">
+            <div class="client-comment__item" data-aos="zoom-in-right">
               <div class="client-comment-item__content-wrapper">
                 <p class="client-comment-item__content">
                   Fantastic platform for online banking. The best online banking
@@ -346,7 +349,7 @@
               <p class="client-comment-item__name">Alastair Cook</p>
               <p class="client-comment-item__job">Businessmen</p>
             </div>
-            <div class="client-comment__item">
+            <div class="client-comment__item" data-aos="zoom-in-left">
               <div class="client-comment-item__content-wrapper">
                 <p class="client-comment-item__content">
                   Fantastic platform for online banking. The best online banking
@@ -382,7 +385,7 @@
       <section id="blog">
         <div class="container">
           <div class="blog-content__wrapper">
-            <div class="blog-content">
+            <div class="blog-content" data-aos="fade-right">
               <p class="section-sub-title">Our Blog</p>
               <h2 class="section-title blog-title">Get The Updates</h2>
               <p class="section-desc">
@@ -391,13 +394,13 @@
               </p>
             </div>
 
-            <div class="blog-cta">
+            <div class="blog-cta" data-aos="fade-left">
               <a href="#!" class="btn blog-cta__btn">Read All</a>
             </div>
           </div>
 
           <div class="blog-list">
-            <article class="blog-item">
+            <article class="blog-item" data-aos="flip-up">
               <img
                 class="blog-item__img"
                 src="./assets/images/blog-1.svg"
@@ -412,7 +415,7 @@
                 <a class="blog-item-content__read" href="#!">Read Blog</a>
               </div>
             </article>
-            <article class="blog-item">
+            <article class="blog-item" data-aos="flip-up">
               <img
                 class="blog-item__img"
                 src="./assets/images/blog-2.svg"
@@ -427,7 +430,7 @@
                 <a class="blog-item-content__read" href="#!">Read Blog</a>
               </div>
             </article>
-            <article class="blog-item">
+            <article class="blog-item" data-aos="flip-up">
               <img
                 class="blog-item__img"
                 src="./assets/images/blog-3.svg"
@@ -442,7 +445,7 @@
                 <a class="blog-item-content__read" href="#!">Read Blog</a>
               </div>
             </article>
-            <article class="blog-item">
+            <article class="blog-item" data-aos="flip-up">
               <img
                 class="blog-item__img"
                 src="./assets/images/blog-4.svg"
@@ -470,7 +473,7 @@
             <img class="app-star-3" src="./assets/icons/star.svg" alt="" />
             <img class="app-star-4" src="./assets/icons/star.svg" alt="" />
 
-            <div class="app-content">
+            <div class="app-content" data-aos="fade-down">
               <p class="section-sub-title app-sub-title">Our App</p>
               <h2 class="section-title app-title">Download the Apps</h2>
               <p class="app-desc">
@@ -565,5 +568,10 @@
         <p class="footer-copyright">© 2020 Ligft Media All rights reserved.</p>
       </footer>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
